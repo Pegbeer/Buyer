@@ -10,9 +10,9 @@ plugins {
     BuyerPlugin
 }
 
-val signPropertiesFile = rootProject.file("sign.properties")
+/*val signPropertiesFile = rootProject.file("sign.properties")
 val signProperties = Properties()
-signProperties.load(FileInputStream(signPropertiesFile))
+signProperties.load(FileInputStream(signPropertiesFile))*/
 
 
 android {
@@ -36,14 +36,14 @@ android {
         viewBinding = true
     }
 
-    signingConfigs{
+    /*signingConfigs{
         create("release"){
             keyAlias = signProperties["keyAlias"].toString()
             keyPassword = signProperties["keyPassword"].toString()
             storeFile = file(signProperties["storeFile"].toString())
             storePassword = signProperties["storePassword"].toString()
         }
-    }
+    }*/
 
     buildTypes{
         getByName("debug"){
@@ -54,8 +54,8 @@ android {
         getByName("release"){
             isMinifyEnabled = true
             isDebuggable = false
-            signingConfig = signingConfigs.getByName("release")
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            /*signingConfig = signingConfigs.getByName("release")
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")*/
         }
     }
 }
