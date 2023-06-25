@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/option_all"
+        android:title="Todos"/>
+
+    <item
+        android:id="@+id/option_cash"
+        android:title="Efectivo" />
+
+    <item
+        android:id="@+id/option_credit_card"
+        android:title="Tarjeta Credito" />
+    <item
+        android:id="@+id/option_tigo_money"
+        android:title="Tigo Money" />
+
+    <item
+        android:id="@+id/option_despacho"
+        android:title="Despacho" />
+
+</menu>

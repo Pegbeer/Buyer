@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pegbeer.buyer.ui.views.DenseShadowCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="4dp"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="8dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tipoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Tipo"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/origenTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tipoTv"
+            tools:text="Origen"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginHorizontal="10dp"/>
+
+        <TextView
+            android:id="@+id/signoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="+"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+            app:layout_constraintStart_toEndOf="@id/origenTv"
+            app:layout_constraintTop_toBottomOf="@id/tipoTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginHorizontal="10dp"/>
+
+        <TextView
+            android:id="@+id/delimitadorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Delimitador"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/origenTv"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginHorizontal="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Hexadecimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/delimitadorTv"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginHorizontal="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.pegbeer.buyer.ui.views.DenseShadowCardView>
